@@ -8,6 +8,7 @@
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="portafolio.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="nav-bar">
@@ -24,15 +25,15 @@
       <div class="parallax__layer parallax__layer--base">
         <div class="home--text_container">
           <p class="title">DAVID AGUILAR H</p>
-          <p class="description">PORTFOLIO</p>
-          <p class="career">Full stack web developer</p>
+          <p class="description">FULL STACK WEB DEVELOPER</p>
+          <p class="career">Portfolio</p>
         </div>
       </div>
     </div>
     <div id="group2" class="parallax__group">
       <div class="parallax__layer parallax__layer--base about--container">
         <div class="about--text_container">
-          <div class="title-line"><span class="title">ABOUT ME</span></div>
+          <p class="title">ABOUT ME</p>
           <p class="description">
             I am a creative person who seeks new challenges and personal improvement. My biggest interests are software development, clean energy, automation and sustainability, as I am very passionate about the environmental care. Based in my career and my work experience, I am looking forward to venture myself to new experiences, specially to international ones, so I can make a contribution from my academic knowledge and at the same time enrich myself personally, since I relate easily with people and I am open-minded to other cultures.
           </p>
@@ -45,22 +46,81 @@
       </div>
     </div>
     <div id="group3" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base"></div>
+      <div class="overlay close-modal"></div>
+      <p class="work-title">WORK</p>
+      <div class="projects-bar">
+        <span class="project-trigger" data-pro="1">EXPENSIFY</span>
+        <span class="project-trigger" data-pro="2">BACHILLERATO DIGITAL</span>
+        <span class="project-trigger" data-pro="3">C4 SECURITY PLATFORM</span>
+        <span class="project-trigger" data-pro="4">BLOG-POST</span>
+        <span class="project-trigger" data-pro="5">GUESS THE NUMBER GAME</span>
+      </div>
+
+      <div class="modal margin-0-auto hide" data-pro="1">
+        <div class="title-line"><span class="title">EXPENSIFY</span></div>
+        <div class="project-container">
+          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quos vitae dicta harum quae et officia ad nihil. Quia officia quae maxime atque reprehenderit cumque vero necessitatibus provident harum nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolor id nihil quo, nostrum ea minima repellat facilis odit repudiandae enim error nam eos, veritatis expedita sit exercitationem maiores autem.</p>
+          <div class="margin-auto project-img">
+            <img src="./images/project-1.png" alt="" class="fit-img">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal margin-0-auto hide" data-pro="2">
+        <div class="title-line"><span class="title">BACHILLERATO DIGITAL</span></div>
+        <div class="project-container">
+          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quos vitae dicta harum quae et officia ad nihil. Quia officia quae maxime atque reprehenderit cumque vero necessitatibus provident harum nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolor id nihil quo, nostrum ea minima repellat facilis odit repudiandae enim error nam eos, veritatis expedita sit exercitationem maiores autem.</p>
+          <div class="margin-auto project-img">
+            <img src="./images/project-2.png" alt="" class="fit-img">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal margin-0-auto hide" data-pro="3">
+        <div class="title-line"><span class="title">C4 SECURITY PLATFORM</span></div>
+        <div class="project-container">
+          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quos vitae dicta harum quae et officia ad nihil. Quia officia quae maxime atque reprehenderit cumque vero necessitatibus provident harum nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolor id nihil quo, nostrum ea minima repellat facilis odit repudiandae enim error nam eos, veritatis expedita sit exercitationem maiores autem.</p>
+          <div class="margin-auto project-img">
+            <img src="./images/project-3.png" alt="" class="fit-img">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal margin-0-auto hide" data-pro="4">
+        <div class="title-line"><span class="title">BLOG-POST</span></div>
+        <div class="project-container">
+          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quos vitae dicta harum quae et officia ad nihil. Quia officia quae maxime atque reprehenderit cumque vero necessitatibus provident harum nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolor id nihil quo, nostrum ea minima repellat facilis odit repudiandae enim error nam eos, veritatis expedita sit exercitationem maiores autem.</p>
+          <div class="margin-auto project-img">
+            <img src="./images/project-4.png" alt="" class="fit-img">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal margin-0-auto hide" data-pro="5">
+        <div class="title-line"><span class="title">GUESS THE NUMBER GAME</span></div>
+        <div class="project-container">
+          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quos vitae dicta harum quae et officia ad nihil. Quia officia quae maxime atque reprehenderit cumque vero necessitatibus provident harum nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolor id nihil quo, nostrum ea minima repellat facilis odit repudiandae enim error nam eos, veritatis expedita sit exercitationem maiores autem.</p>
+          <div class="margin-auto project-img">
+            <img src="./images/project-5.png" alt="" class="fit-img">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="group4" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
-        <div class="projects-bar">
-          <span>PROJECT 1</span>
-          <span>PROJECT 2</span>
-          <span>PROJECT 3</span>
-          <span>PROJECT 4</span>
-          <span>PROJECT 5</span>
-          <span>PROJECT 6</span>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/davidaguilarh/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>https://www.linkedin.com/in/davidaguilarh/</a>
+          <a href="https://github.com/Daguilar94" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>https://github.com/Daguilar94</a>
+          <address>
+            <a href="mailto:davidaguilarh.94@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Davidaguilarh.94@gmail.com</a>.<br>
+          </address>
         </div>
       </div>
     </div>
-    <div id="group4" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Contact</div>
-      </div>
-    </div>
   </div>
+  <script type="text/javascript" src="./portfolio.js"></script>
 </body>
 </html>
