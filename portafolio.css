@@ -1,6 +1,11 @@
 
 /*Parallax*/
+
+@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+  /* ... parallax styles ... */
+
 .parallax {
+  scroll-behavior: smooth;
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
@@ -31,6 +36,8 @@
   transform: translateZ(-1px) scale(2);
 }
 
+}
+
 /*Groups*/
 
 #group1 {
@@ -45,9 +52,6 @@
   background-color: #fff;
 }
 
-#group3 {
-  height: 95vh;
-}
 #group4 {
   height: 20vh;
 }
@@ -117,11 +121,13 @@ p {
   position: fixed;
   height: 3vh;
   width: 100%;
-  background-color: #222;
+  /*background-color: #222;*/
+  background-color: transparent;
   z-index: 1;
   color: #ddd;
   font-size: 2em;
   padding: 15px;
+  transition: background-color .27s ease-in-out;
 }
 
 .projects-bar {
@@ -132,9 +138,11 @@ p {
   align-self: flex-end;
 }
 
-.nav-bar span,
+.nav-bar a,
 .projects-bar span {
   font-family: 'Open Sans Condensed', sans-serif;
+  text-decoration: none;
+  color: white;
   display: inline-block;
   margin-right: 45px;
   cursor: pointer;
@@ -142,12 +150,8 @@ p {
   text-shadow: 2px 2px 4px #000;
 }
 
-.nav-bar span:hover,
+.nav-bar a:hover,
 .projects-bar span:hover {
-  color: #999;
-}
-
-.active {
   color: #999;
 }
 
@@ -316,4 +320,8 @@ address {
 .contact-links a:hover {
   color: #999;
   transform: scale(1.1);
+}
+
+.active {
+  color: #999 !important;
 }
