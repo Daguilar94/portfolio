@@ -1,0 +1,403 @@
+#scrolltop a {
+  color: #fff !important;
+}
+
+.gallery.columns4>a {
+  height: 200px;
+  overflow: hidden;
+}
+
+header #trigger {
+  top: 28px;
+  right: 40px;
+}
+
+.dash-widget {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#trigger {
+  padding: 10px;
+  margin-top: -10px;
+}
+
+#discussion {
+  display: none;
+}
+
+#logo {
+  margin: 0;
+  padding: 15px 0;
+}
+
+#logo img {
+  height: 110px;
+  max-height: 110px;
+}
+
+.menu-main-container {
+  padding-top: 40px;
+}
+
+.menu-main-container strong {
+  font-size: 15px;
+}
+
+.home-page .custom_post_carousel {
+  padding: 70px 0;
+}
+
+.home-page .custom_post_carousel .block_content .block_title {
+  font-size: 24px;
+}
+
+.home-page .custom_post_carousel .block_content .course_instructor {
+  color: #6a2771 !important;
+}
+
+.flex-control-nav {
+  bottom: -60px;
+}
+
+.home-page .main {
+  margin-top: 40px;
+  background-color: #6a2771;
+}
+
+.homecourses {
+  padding: 30px 0;
+}
+
+.homecourses .block_content {
+  background: #fff;
+}
+
+.homecourses .block_title a {
+  color: #444;
+}
+
+.homecourses .flex-control-nav {
+  bottom: -60px;
+}
+
+.home-talento-courses {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.home-talento-courses h2 {
+  font-size: 3em;
+  margin-bottom: 0;
+  color: #e3e5e7;
+}
+
+.home-talento-courses h3 {
+  display: inline-block;
+  position: relative;
+  margin: 0.6em 0 1em;
+  border-bottom: 4px solid #e3e5e7;
+  color: #e3e5e7;
+  font-size: 2.3em;
+}
+
+.home-talento-courses h3::before {
+  content: "\A";
+  border-style: solid;
+  border-width: 15px 20px 15px 0;
+  border-color: transparent #e3e5e7 transparent transparent;
+  position: absolute;
+  bottom: -25px;
+  left: 48%;
+  transform: rotate(-90deg);
+}
+
+#headertop.fixed .homeicon img {
+  max-height: 40px;
+  padding: 5px 0;
+}
+
+.course_details .course_certificate {
+  display: none;
+}
+
+.notification {
+  width: 100%;
+}
+
+.minimal .pusher #title {
+  background: #6a2771;
+}
+
+.minimal .pusher #title h1,
+.minimal .pusher #title h5 {
+  color: white;
+}
+
+#title .pagetitle {
+  color: white;
+}
+
+.bbp-breadcrumb {
+  display: none;
+}
+
+#title .bbp-search-form {
+  margin-top: 30px;
+}
+
+.single-course .minimal .pusher #title {
+  background: #fafafa;
+}
+
+.single-course.c2 .course_header #item-header-content h1 {
+  color: #282828;
+}
+
+.icon-banner {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  height: 120px;
+  z-index: 1;
+}
+
+.weneed {
+  width: 450px
+}
+
+/* Utils */
+.margin-30-auto {
+  margin: 30px auto;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+/* Utils */
+
+/* Reset */
+p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.main_unit_content ul {
+  font-size: 16px;
+  line-height: 1.8;
+}
+/* Reset */
+
+/* Override WPLMS */
+.accordion-heading a {
+  font-size: 14px;
+}
+
+.heading span {
+  font-size: 28px;
+}
+
+.heading span::after {
+  bottom: -7px !important;
+}
+
+.vibe_carousel .flex-control-nav li a {
+  width: 15px;
+  height: 15px;
+  background-color: #6a2771 !important;
+}
+
+.homecourses .block_title a {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+#buddypress .field-visibility-settings-toggle,
+#buddypress .field-visibility-settings-notoggle {
+  display: none;
+}
+
+#field_1-3,
+#field_2-3,
+#field_3-3,
+#field_7-3 {
+  display: none;
+}
+
+.single-course.c2 section#title {
+  background: #fafafa;
+}
+
+.extra_buttons .certificate_print,
+.extra_buttons .certificate_pdf,
+.extra_buttons .certificate_download {
+  display: none;
+}
+/* Override WPLMS */
+
+/* Guide content */
+.note__container {
+  display: flex;
+  align-items: center;
+}
+
+.note__container i {
+  line-height: 26px;
+}
+
+.note__content {
+  margin: 0 0 0 20px;
+  width: 95%;
+}
+
+.note__subtitle {
+  font-style: normal;
+}
+/* Guide content */
+
+/* MOOC's OS */
+.os p{
+  text-align: justify;
+}
+
+.os .solid-border {
+  margin: 0 80px 50px 40px;
+  border-top: 9px solid #21a48e;
+  opacity: 1;
+}
+
+.os::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  background-image: url('http://tecnologia.cid.edu.co/wp-content/uploads/2017/12/ICONOS-PARA-MODULOS-02.png');
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+
+.os::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: 0;
+  background-image: url('http://tecnologia.cid.edu.co/wp-content/uploads/2017/12/ICONOS-PARA-MODULOS-08.png');
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+/* MOOC's OS */
+
+/* MOOC's Beam */
+.beam p{
+  text-align: justify;
+}
+
+.beam .solid-border {
+  margin: 0 80px 50px 40px;
+  border-top: 9px solid #26a9e0;
+  opacity: 1;
+}
+
+.beam::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  background-image: url('http://tecnologia.cid.edu.co/wp-content/uploads/2017/12/ICONOS-PARA-MODULOS-02.png');
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+}
+
+.beam::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: 0;
+  background-image: url('http://tecnologia.cid.edu.co/wp-content/uploads/2017/12/ICONOS-PARA-MODULOS-06.png');
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+/* MOOC's Beam */
+
+/* MOOC's Software */
+.software p{
+  text-align: justify;
+}
+
+.software .solid-border {
+  margin: 0 80px 50px 40px;
+  border-top: 9px solid rgb(238, 68, 112);
+  opacity: 1;
+}
+
+.software::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  background-image: url('http://tecnologia.cid.edu.co/wp-content/uploads/2017/12/ICONOS-PARA-MODULOS-02.png');
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+}
+
+.software::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: 0;
+  background-image: url('http://tecnologia.cid.edu.co/wp-content/uploads/2017/12/ICONOS-PARA-MODULOS-07.png');
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+/* MOOC's Software */
+
+/* MOOC's PC */
+.pc p{
+  text-align: justify;
+}
+
+.pc .solid-border {
+  margin: 0 80px 50px 40px;
+  border-top: 9px solid rgb(224, 167, 51);
+  opacity: 1;
+}
+
+.pc::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  background-image: url('http://tecnologia.cid.edu.co/wp-content/uploads/2017/12/ICONOS-PARA-MODULOS-02.png');
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+}
+
+.pc::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: 0;
+  background-image: url('http://tecnologia.cid.edu.co/wp-content/uploads/2017/12/ICONOS-PARA-MODULOS-09.png');
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+/* MOOC's PC */

@@ -41,7 +41,7 @@ $(document).ready(function(e){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('.parallax').animate({
         scrollTop: $(hash).offset().top
-      }, 400, function(){
+      }, 100, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
