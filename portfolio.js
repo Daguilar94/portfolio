@@ -1,16 +1,37 @@
 $(document).ready(function(e){
-  $('.project-trigger, .nav-bar a').click(function() {
+  $('.project-trigger').click(function() {
     $('.project-trigger').removeClass('active')
-    $('.nav-bar a').removeClass('active')
     $(this).addClass('active')
     $('.modal').fadeOut(200)
     const data = $(this).data('pro')
     $(`.modal[data-pro = ${data}]`).removeClass('hide').hide().fadeIn(400)
+    $('#group3 .work-msg').fadeOut(300)
+    console.log(window.innerWidth);
+    if (window.innerWidth < 768) {
+      $('#group3').css({'height': '115vh'})
+      $('.projects-bar').css({'top': '0'})
+    }
+  })
+
+  $('.nav-bar a').click(function() {
+    $('.nav-bar a').removeClass('active')
+    $(this).addClass('active')
   })
 
   $('.close-modal').click(function(){
     $('.modal').fadeOut(200)
     $('.project-trigger').removeClass('active')
+    $('#group3 .work-msg').fadeIn(300)
+  })
+
+  $('#group1, #group2, #group4').click(function(){
+    if (window.innerWidth < 768) {
+      $('.modal').fadeOut(200)
+      $('.project-trigger').removeClass('active')
+      $('#group3 .work-msg').fadeIn(300)
+      $('#group3').css({'height': '70vh'})
+      $('.projects-bar').css({'top': '25%'})
+    }
   })
 
   $('#group3').hover(function(){
