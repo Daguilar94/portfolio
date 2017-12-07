@@ -465,7 +465,7 @@ address {
     display: inline-block;
     content: "";
     border-top: 2px solid black;
-    width: 60%;
+    width: 55%;
     margin: 0 13px;
     transform: translateY(-23px);
   }
