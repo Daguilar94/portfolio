@@ -151,7 +151,7 @@ address {
 
   /*Groups*/
   #group1 .parallax__layer--back {
-    background-image: url('./images/home-mobile.JPG');
+    background-image: url('./images/home-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -163,7 +163,7 @@ address {
   }
 
   #group3 .parallax__layer--base {
-    background-image: url('./images/works2.JPG');
+    background-image: url('./images/works2.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -407,7 +407,7 @@ address {
   /*Goups*/
 
   #group1 .parallax__layer--back {
-    background-image: url('./images/foto-home.JPG');
+    background-image: url('./images/foto-home.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -415,7 +415,7 @@ address {
   }
 
   #group3 .parallax__layer--base {
-    background-image: url('./images/works.JPG');
+    background-image: url('./images/works.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
