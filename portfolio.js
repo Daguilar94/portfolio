@@ -1,5 +1,10 @@
 $(document).ready(function(e){
 
+  if (window.innerWidth < 992) {
+    const img_conainer_height = ((window.innerHeight * 1.4) - parseInt($('.about--text_container').css('height')) - 20) + 'px'
+    $('.about--img_container').css({'height': img_conainer_height})
+  }
+
   $( "#nav-toggle" ).on( "click", function() {
     $(this).toggleClass( "active-ham" );
     if ($(this).hasClass("active-ham")) {
@@ -19,9 +24,9 @@ $(document).ready(function(e){
     $(`.modal[data-pro = ${data}]`).removeClass('hide').hide().fadeIn(400)
     $('#group3 .work-msg').fadeOut(300)
     console.log(window.innerWidth);
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 992) {
       $('#group3').css({'height': '115vh'})
-      $('.projects-bar').css({'top': '0'})
+      $('.projects-bar').css({'top': '0', 'height': '40%'})
     }
   })
 
@@ -37,17 +42,16 @@ $(document).ready(function(e){
   })
 
   $('#group1, #group2, #group4').click(function(){
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 992) {
       $('.modal').fadeOut(200)
       $('.project-trigger').removeClass('active')
       $('#group3 .work-msg').fadeIn(300)
       $('#group3').css({'height': '80vh'})
-      $('.projects-bar').css({'top': '25%'})
+      $('.projects-bar').css({'top': '25%', 'height': '80%'})
     }
   })
 
   $('#group3').hover(function(){
-    console.log('hola')
     $('#group3 .parallax__layer--base').css({'filter': 'grayscale(1)'})
     $('#group3 .overlay').css({'opacity': '1'})
   }, function(){
@@ -64,7 +68,7 @@ $(document).ready(function(e){
   // Add smooth scrolling to all links
   $("a.scroll-item").on('click', function(event) {
 
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 992) {
       $( "#nav-toggle" ).toggleClass( "active-ham" );
       $('.nav-bar').css({'height': '3vh'})
       $('.scroll-item').fadeOut(200)
