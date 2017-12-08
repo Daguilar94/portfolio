@@ -1,4 +1,16 @@
 $(document).ready(function(e){
+
+  $( "#nav-toggle" ).on( "click", function() {
+    $(this).toggleClass( "active-ham" );
+    if ($(this).hasClass("active-ham")) {
+      $('.nav-bar').css({'height': '25vh'})
+      $('.scroll-item').fadeIn(500)
+    } else {
+      $('.nav-bar').css({'height': '3vh'})
+      $('.scroll-item').fadeOut(200)
+    }
+  });
+
   $('.project-trigger').click(function() {
     $('.project-trigger').removeClass('active')
     $(this).addClass('active')
@@ -29,7 +41,7 @@ $(document).ready(function(e){
       $('.modal').fadeOut(200)
       $('.project-trigger').removeClass('active')
       $('#group3 .work-msg').fadeIn(300)
-      $('#group3').css({'height': '70vh'})
+      $('#group3').css({'height': '80vh'})
       $('.projects-bar').css({'top': '25%'})
     }
   })
@@ -50,7 +62,14 @@ $(document).ready(function(e){
   })
 
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $("a.scroll-item").on('click', function(event) {
+
+    if (window.innerWidth < 768) {
+      $( "#nav-toggle" ).toggleClass( "active-ham" );
+      $('.nav-bar').css({'height': '3vh'})
+      $('.scroll-item').fadeOut(200)
+    }
+
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior

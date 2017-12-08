@@ -141,7 +141,7 @@ address {
   }
 
   #group3 {
-    height: 70vh;
+    height: 80vh;
   }
 
   #group4 {
@@ -157,18 +157,23 @@ address {
     background-position: center;
   }
 
+  #group2 .parallax__layer--base {
+    padding: 30px 0 0 10px;
+  }
+
   #group3 .parallax__layer--base {
-    background-image: url('./images/59.JPG');
+    background-image: url('./images/works2.JPG');
     background-size: cover;
     background-position: center;
     display: flex;
   }
 
   /*HTML*/
+
   .nav-bar {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-flow: column nowrap;
+    align-items: flex-start;
     position: fixed;
     height: 3vh;
     width: 100%;
@@ -177,11 +182,22 @@ address {
     color: #ddd;
     font-size: 2em;
     padding: 15px;
+    transition: height .37s ease-in-out;
+  }
+
+  .nav-bar a.scroll-item {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-right: 45px;
+    cursor: pointer;
+    transition: color .03s ease-in;
+    text-shadow: 2px 2px 4px #000;
   }
 
   .projects-bar {
     position: relative;
-    top: 25%;
+    top: 30%;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
@@ -198,14 +214,54 @@ address {
     margin: 5px 0;
   }
 
-  .nav-bar a {
+  .nav-bar a.scroll-item {
     display: none;
   }
 
-  .nav-bar i {
-    display: inline-block;
-    margin-right: 30px;
+  #nav-toggle {
+    z-index: 30;
+    position: absolute;
+    top: 23px;
+    right: 45px;
   }
+
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  #nav-toggle span:before {
+    top: -10px;
+  }
+  #nav-toggle span:after {
+    bottom: -10px;
+  }
+
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+  }
+  #nav-toggle.active-ham span {
+    background-color: transparent;
+  }
+  #nav-toggle.active-ham span:before, #nav-toggle.active-ham span:after {
+    top: 0;
+  }
+  #nav-toggle.active-ham span:before {
+    transform: rotate(45deg);
+  }
+  #nav-toggle.active-ham span:after {
+    transform: rotate(-45deg);
+  }
+
+  /*.nav-bar i {
+  display: inline-block;
+  margin-right: 30px;
+  }*/
 
   .home--text_container {
     position: absolute;
@@ -278,6 +334,7 @@ address {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 35px;
   }
   .work-msg .work-description {
     display: none;
@@ -392,7 +449,7 @@ address {
     align-self: flex-end;
   }
 
-  .nav-bar a,
+  .nav-bar a.scroll-item,
   .projects-bar span {
     text-decoration: none;
     color: white;
@@ -408,7 +465,11 @@ address {
     color: #999;
   }
 
-  .nav-bar i {
+  /*.nav-bar i {
+  display: none
+  }*/
+
+  #nav-toggle {
     display: none
   }
 
@@ -432,11 +493,11 @@ address {
   }
 
   /*.home--text_container .career {
-    text-shadow: 1px 1px 5px #999;
-    color: white;
-    font-size: 25px;
-    position: absolute;
-    top: 565px;
+  text-shadow: 1px 1px 5px #999;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 565px;
   }*/
 
   .about--container {
