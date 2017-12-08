@@ -142,6 +142,7 @@ address {
 
   #group3 {
     height: 80vh;
+    transition: height .37s ease-in-out;
   }
 
   #group4 {
@@ -201,12 +202,13 @@ address {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    padding-left: 10px;
+    padding-left: 20px;
     z-index: 1;
     color: #222;
     background-color: transparent;
     font-size: 2em;
     font-weight: bold;
+    transition: top .37s ease-in-out;
   }
 
   .project-trigger {
