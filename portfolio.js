@@ -1,10 +1,12 @@
 $(document).ready(function(e){
 
-  if (window.innerWidth < 992) {
-    const img_conainer_height = ((window.innerHeight * 1.4) - parseInt($('.about--text_container').css('height')) - 20) + 'px'
+// With the next function the width of the image container in the about secction adjusts itself to devise screen and the images do too in consequence
+  if (window.innerWidth < 768) {
+    const img_conainer_height = ((window.innerHeight * 2) - parseInt($('.about--text_container').css('height')) - 20) + 'px'
     $('.about--img_container').css({'height': img_conainer_height})
   }
 
+// This function implements the hamburger icon functionality
   $( "#nav-toggle" ).on( "click", function() {
     $(this).toggleClass( "active-ham" );
     if ($(this).hasClass("active-ham")) {
@@ -16,6 +18,8 @@ $(document).ready(function(e){
     }
   });
 
+  // This next block indicates the actions that have to be taken when the user selects one project to see
+
   $('.project-trigger').click(function() {
     $('.project-trigger').removeClass('active')
     $(this).addClass('active')
@@ -24,16 +28,20 @@ $(document).ready(function(e){
     $(`.modal[data-pro = ${data}]`).removeClass('hide').hide().fadeIn(400)
     $('#group3 .work-msg').fadeOut(300)
     console.log(window.innerWidth);
-    if (window.innerWidth < 992) {
+    if (window.innerWidth < 768) {
       $('#group3').css({'height': '115vh'})
       $('.projects-bar').css({'top': '0', 'height': '40%'})
     }
   })
 
+// Styling of the selected item
+
   $('.nav-bar a').click(function() {
     $('.nav-bar a').removeClass('active')
     $(this).addClass('active')
   })
+
+  // Close the project-modal of the Work section
 
   $('.close-modal').click(function(){
     $('.modal').fadeOut(200)
@@ -41,8 +49,10 @@ $(document).ready(function(e){
     $('#group3 .work-msg').fadeIn(300)
   })
 
+// styling of the work section when other section is touched.(the opened project closes)
+
   $('#group1, #group2, #group4').click(function(){
-    if (window.innerWidth < 992) {
+    if (window.innerWidth < 768) {
       $('.modal').fadeOut(200)
       $('.project-trigger').removeClass('active')
       $('#group3 .work-msg').fadeIn(300)
@@ -51,6 +61,8 @@ $(document).ready(function(e){
     }
   })
 
+// Hover styling of the work section
+
   $('#group3').hover(function(){
     $('#group3 .parallax__layer--base').css({'filter': 'grayscale(1)'})
     $('#group3 .overlay').css({'opacity': '1'})
@@ -58,6 +70,8 @@ $(document).ready(function(e){
     $('#group3 .parallax__layer--base').css({'filter': 'grayscale(0)'})
     $('#group3 .overlay').css({'opacity': '0'})
   })
+
+// Hover styling of links in contact section
 
   $('.contact-links a').hover(function(){
     $(this).children('i').css('color', '#999')
@@ -68,7 +82,7 @@ $(document).ready(function(e){
   // Add smooth scrolling to all links
   $("a.scroll-item").on('click', function(event) {
 
-    if (window.innerWidth < 992) {
+    if (window.innerWidth < 768) {
       $( "#nav-toggle" ).toggleClass( "active-ham" );
       $('.nav-bar').css({'height': '3vh'})
       $('.scroll-item').fadeOut(200)
@@ -91,11 +105,6 @@ $(document).ready(function(e){
         window.location.hash = hash;
       });
     } // End if
-  });
-
-  $(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
-    console.log(scroll);
   });
 
 })
