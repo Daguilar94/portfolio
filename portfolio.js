@@ -26,10 +26,10 @@ $(document).ready(function(e){
     $('.modal').fadeOut(200)
     const data = $(this).data('pro')
     $(`.modal[data-pro = ${data}]`).removeClass('hide').hide().fadeIn(400)
-    $('#group3 .work-msg').fadeOut(300)
+    $('#work .work-msg').fadeOut(300)
     console.log(window.innerWidth);
     if (window.innerWidth < 768) {
-      $('#group3').css({'height': '115vh'})
+      $('#work').css({'height': '115vh'})
       $('.projects-bar').css({'top': '0', 'height': '40%'})
     }
   })
@@ -46,29 +46,29 @@ $(document).ready(function(e){
   $('.close-modal').click(function(){
     $('.modal').fadeOut(200)
     $('.project-trigger').removeClass('active')
-    $('#group3 .work-msg').fadeIn(300)
+    $('#work .work-msg').fadeIn(300)
   })
 
   // styling of the work section when other section is touched.(the opened project closes)
 
-  $('#group1, #group2, #group4').click(function(){
+  $('#home, #about, #contact').click(function(){
     $('.modal').fadeOut(200)
     $('.project-trigger').removeClass('active')
-    $('#group3 .work-msg').fadeIn(300)
+    $('#work .work-msg').fadeIn(300)
     if (window.innerWidth < 768) {
-      $('#group3').css({'height': '80vh'})
+      $('#work').css({'height': '80vh'})
       $('.projects-bar').css({'top': '25%', 'height': '80%'})
     }
   })
 
   // Hover styling of the work section
 
-  $('#group3').hover(function(){
-    $('#group3 .parallax__layer--base').css({'filter': 'grayscale(1)'})
-    $('#group3 .overlay').css({'opacity': '1'})
+  $('#work').hover(function(){
+    $('#work .parallax__layer--base').css({'filter': 'grayscale(1)'})
+    $('#work .overlay').css({'opacity': '1'})
   }, function(){
-    $('#group3 .parallax__layer--base').css({'filter': 'grayscale(0)'})
-    $('#group3 .overlay').css({'opacity': '0'})
+    $('#work .parallax__layer--base').css({'filter': 'grayscale(0)'})
+    $('#work .overlay').css({'opacity': '0'})
   })
 
   // Hover styling of links in contact section
