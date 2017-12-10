@@ -1,12 +1,12 @@
 $(document).ready(function(e){
 
-// With the next function the width of the image container in the about secction adjusts itself to devise screen and the images do too in consequence
+  // With the next function the width of the image container in the about secction adjusts itself to devise screen and the images do too in consequence
   if (window.innerWidth < 768) {
     const img_conainer_height = ((window.innerHeight * 2) - parseInt($('.about--text_container').css('height')) - 20) + 'px'
     $('.about--img_container').css({'height': img_conainer_height})
   }
 
-// This function implements the hamburger icon functionality
+  // This function implements the hamburger icon functionality
   $( "#nav-toggle" ).on( "click", function() {
     $(this).toggleClass( "active-ham" );
     if ($(this).hasClass("active-ham")) {
@@ -34,7 +34,7 @@ $(document).ready(function(e){
     }
   })
 
-// Styling of the selected item
+  // Styling of the selected item
 
   $('.nav-bar a').click(function() {
     $('.nav-bar a').removeClass('active')
@@ -49,19 +49,19 @@ $(document).ready(function(e){
     $('#group3 .work-msg').fadeIn(300)
   })
 
-// styling of the work section when other section is touched.(the opened project closes)
+  // styling of the work section when other section is touched.(the opened project closes)
 
   $('#group1, #group2, #group4').click(function(){
+    $('.modal').fadeOut(200)
+    $('.project-trigger').removeClass('active')
+    $('#group3 .work-msg').fadeIn(300)
     if (window.innerWidth < 768) {
-      $('.modal').fadeOut(200)
-      $('.project-trigger').removeClass('active')
-      $('#group3 .work-msg').fadeIn(300)
       $('#group3').css({'height': '80vh'})
       $('.projects-bar').css({'top': '25%', 'height': '80%'})
     }
   })
 
-// Hover styling of the work section
+  // Hover styling of the work section
 
   $('#group3').hover(function(){
     $('#group3 .parallax__layer--base').css({'filter': 'grayscale(1)'})
@@ -71,7 +71,7 @@ $(document).ready(function(e){
     $('#group3 .overlay').css({'opacity': '0'})
   })
 
-// Hover styling of links in contact section
+  // Hover styling of links in contact section
 
   $('.contact-links a').hover(function(){
     $(this).children('i').css('color', '#999')
