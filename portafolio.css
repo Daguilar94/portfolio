@@ -266,11 +266,6 @@ address {
     transform: rotate(-45deg);
   }
 
-  /*.nav-bar i {
-  display: inline-block;
-  margin-right: 30px;
-  }*/
-
   .home--text_container {
     position: absolute;
     top: 20%;
@@ -281,15 +276,15 @@ address {
   }
 
   .home--text_container .title {
-    text-shadow: 1px 1px 5px #999;
-    color: black;
+    text-shadow: 3px 3px 8px #222;
+    color: white;
     font-size: 8vh;
     font-weight: bold;
   }
 
   .home--text_container .description {
-    text-shadow: 1px 1px 5px #999;
-    color: black;
+    text-shadow: 3px 3px 5px #222;
+    color: white;
     font-size: 4.4vh;
   }
 
@@ -476,10 +471,6 @@ address {
   .projects-bar span:hover {
     color: #999;
   }
-
-  /*.nav-bar i {
-  display: none
-  }*/
 
   #nav-toggle {
     display: none
